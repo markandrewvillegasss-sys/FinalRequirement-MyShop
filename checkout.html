@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checkout - MyShop</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <h1>MyShop</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="products.html">Products</a>
+      <a href="contact.html">Contact Us</a>
+      <a href="register.html">Register</a>
+      <a href="login.html">Login</a>
+      <a href="checkout.html">Checkout</a>
+    </nav>
+  </header>
+
+  <!-- Checkout Section -->
+  <section class="checkout">
+    <h2>Checkout</h2>
+
+    <!-- Customer Information -->
+    <h3>Customer Information</h3>
+    <form>
+      <label>Full Name:</label>
+      <input type="text" name="fullname" required>
+
+      <label>Email:</label>
+      <input type="email" name="email" required>
+
+      <label>Address:</label>
+      <input type="text" name="address" required>
+
+      <label>Phone Number:</label>
+      <input type="tel" name="phone" required>
+
+      <!-- Order Information -->
+      <h3>Order Information</h3>
+      <label>Product Selection:</label>
+      <input type="text" name="product" required>
+
+      <label>Quantity:</label>
+      <input type="number" name="quantity" min="1" required>
+
+      <label>Shipping Method:</label>
+      <select name="shipping" required>
+        <option value="">Select</option>
+        <option>Standard</option>
+        <option>Express</option>
+      </select>
+
+      <label>Payment Method:</label>
+      <select name="payment" required>
+        <option value="">Select</option>
+        <option>Credit Card</option>
+        <option>PayPal</option>
+        <option>Cash on Delivery</option>
+      </select>
+
+      <!-- Order Summary -->
+      <h3>Order Summary</h3>
+      <table>
+        <tr>
+          <th>Product</th>
+          <th>Quantity</th>
+          <th>Price</th>
+          <th>Total</th>
+        </tr>
+        <tr>
+          <td>Sample Product</td>
+          <td>1</td>
+          <td>$99.99</td>
+          <td>$99.99</td>
+        </tr>
+      </table>
+
+      <!-- Buttons -->
+      <button type="submit">Place Order</button>
+      <button type="reset">Cancel</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2026 MyShop. All rights reserved.</p>
+  </footer>
+</body>
+</html>

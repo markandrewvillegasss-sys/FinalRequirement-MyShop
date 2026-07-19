@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Checkout - MyShop</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="images/logo.png" alt="MyShop Logo">
+      <h1>MyShop</h1>
+    </div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="products.html">Products</a>
+      <a href="contact.html">Contact Us</a>
+      <a href="register.html">Register</a>
+      <a href="login.html">Login</a>
+      <a href="checkout.html">Checkout</a>
+    </nav>
+  </header>
+
+  <section class="checkout">
+    <h2>Customer Information</h2>
+    <form action="#" method="post" class="checkout-form">
+      <label for="fullname">Full Name</label>
+      <input type="text" id="fullname" name="fullname" required>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="address">Address</label>
+      <textarea id="address" name="address" rows="3" required></textarea>
+
+      <label for="phone">Phone Number</label>
+      <input type="tel" id="phone" name="phone" pattern="[0-9]{11}" placeholder="09XXXXXXXXX" required>
+
+      <h2>Order Information</h2>
+      <label for="product">Product Selection</label>
+      <select id="product" name="product" required>
+        <option value="">Select Product</option>
+        <option value="shoes">Shoes</option>
+        <option value="watch">Watch</option>
+        <option value="laptop">Laptop</option>
+        <option value="smartphone">Smartphone</option>
+        <option value="headphones">Headphones</option>
+        <option value="backpack">Backpack</option>
+        <option value="smartwatch">Smartwatch</option>
+        <option value="sunglasses">Sunglasses</option>
+        <option value="wallet">Wallet</option>
+        <option value="tablet">Tablet</option>
+      </select>
+
+      <label for="quantity">Quantity</label>
+      <input type="number" id="quantity" name="quantity" min="1" required>
+
+      <label for="shipping">Shipping Method</label>
+      <select id="shipping" name="shipping" required>
+        <option value="">Select Shipping</option>
+        <option value="standard">Standard (3–5 days)</option>
+        <option value="express">Express (1–2 days)</option>
+      </select>
+
+      <label for="payment">Payment Method</label>
+      <select id="payment" name="payment" required>
+        <option value="">Select Payment</option>
+        <option value="credit">Credit Card</option>
+        <option value="paypal">PayPal</option>
+        <option value="cod">Cash on Delivery</option>
+      </select>
+
+      <h2>Order Summary</h2>
+      <table class="order-summary">
+        <tr>
+          <th>Product</th>
+          <th>Quantity</th>
+          <th>Price</th>
+        </tr>
+        <tr>
+          <td id="summary-product">Shoes</td>
+          <td id="summary-quantity">1</td>
+          <td id="summary-price">$89.99</td>
+        </tr>
+        <tr>
+          <td colspan="2"><strong>Total</strong></td>
+          <td id="summary-total">$89.99</td>
+        </tr>
+      </table>
+
+      <div class="form-buttons">
+        <button type="submit">Place Order</button>
+        <button type="reset">Cancel</button>
+      </div>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2026 MyShop. All rights reserved.</p>
+    <div class="social-icons">
+      <img src="images/facebook.png" alt="Facebook">
+      <img src="images/twitter.png" alt="Twitter">
+      <img src="images/instagram.png" alt="Instagram">
+    </div>
+  </footer>
+</body>
+</html>
